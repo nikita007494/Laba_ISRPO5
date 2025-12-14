@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Prim = new System.Windows.Forms.TextBox();
             this.One = new System.Windows.Forms.Button();
             this.Four = new System.Windows.Forms.Button();
             this.Zero = new System.Windows.Forms.Button();
@@ -61,13 +61,14 @@
             this.button_resulit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_Prim
             // 
-            this.textBox1.Location = new System.Drawing.Point(251, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox_Prim.Location = new System.Drawing.Point(251, 125);
+            this.textBox_Prim.Name = "textBox_Prim";
+            this.textBox_Prim.ReadOnly = true;
+            this.textBox_Prim.Size = new System.Drawing.Size(222, 20);
+            this.textBox_Prim.TabIndex = 0;
+            this.textBox_Prim.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // One
             // 
@@ -77,6 +78,7 @@
             this.One.TabIndex = 1;
             this.One.Text = "1";
             this.One.UseVisualStyleBackColor = true;
+            this.One.Click += new System.EventHandler(this.One_Click);
             // 
             // Four
             // 
@@ -86,6 +88,7 @@
             this.Four.TabIndex = 2;
             this.Four.Text = "4";
             this.Four.UseVisualStyleBackColor = true;
+            this.Four.Click += new System.EventHandler(this.Four_Click);
             // 
             // Zero
             // 
@@ -95,6 +98,7 @@
             this.Zero.TabIndex = 4;
             this.Zero.Text = "0";
             this.Zero.UseVisualStyleBackColor = true;
+            this.Zero.Click += new System.EventHandler(this.Zero_Click);
             // 
             // Seven
             // 
@@ -104,6 +108,7 @@
             this.Seven.TabIndex = 3;
             this.Seven.Text = "7";
             this.Seven.UseVisualStyleBackColor = true;
+            this.Seven.Click += new System.EventHandler(this.Seven_Click);
             // 
             // button_PI
             // 
@@ -158,6 +163,7 @@
             this.Eight.TabIndex = 9;
             this.Eight.Text = "8";
             this.Eight.UseVisualStyleBackColor = true;
+            this.Eight.Click += new System.EventHandler(this.Eight_Click);
             // 
             // Five
             // 
@@ -167,6 +173,7 @@
             this.Five.TabIndex = 8;
             this.Five.Text = "5";
             this.Five.UseVisualStyleBackColor = true;
+            this.Five.Click += new System.EventHandler(this.Five_Click);
             // 
             // Two
             // 
@@ -213,6 +220,7 @@
             this.Nine.TabIndex = 15;
             this.Nine.Text = "9";
             this.Nine.UseVisualStyleBackColor = true;
+            this.Nine.Click += new System.EventHandler(this.Nine_Click);
             // 
             // Six
             // 
@@ -222,6 +230,7 @@
             this.Six.TabIndex = 14;
             this.Six.Text = "6";
             this.Six.UseVisualStyleBackColor = true;
+            this.Six.Click += new System.EventHandler(this.Six_Click);
             // 
             // Three
             // 
@@ -231,6 +240,7 @@
             this.Three.TabIndex = 13;
             this.Three.Text = "3";
             this.Three.UseVisualStyleBackColor = true;
+            this.Three.Click += new System.EventHandler(this.Three_Click);
             // 
             // button_Degree
             // 
@@ -276,6 +286,7 @@
             this.button_razn.TabIndex = 20;
             this.button_razn.Text = "-";
             this.button_razn.UseVisualStyleBackColor = true;
+            this.button_razn.Click += new System.EventHandler(this.button_razn_Click);
             // 
             // button_Sum
             // 
@@ -285,6 +296,7 @@
             this.button_Sum.TabIndex = 19;
             this.button_Sum.Text = "+";
             this.button_Sum.UseVisualStyleBackColor = true;
+            this.button_Sum.Click += new System.EventHandler(this.button_Sum_Click);
             // 
             // button_Delete
             // 
@@ -339,6 +351,7 @@
             this.button_resulit.TabIndex = 25;
             this.button_resulit.Text = "=";
             this.button_resulit.UseVisualStyleBackColor = true;
+            this.button_resulit.Click += new System.EventHandler(this.button_resulit_Click);
             // 
             // Form1
             // 
@@ -375,7 +388,7 @@
             this.Controls.Add(this.Seven);
             this.Controls.Add(this.Four);
             this.Controls.Add(this.One);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Prim);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -385,7 +398,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Prim;
         private System.Windows.Forms.Button One;
         private System.Windows.Forms.Button Four;
         private System.Windows.Forms.Button Zero;
